@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Genio Matemático!</title>
+    <link rel="stylesheet" href="juego.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="marco">
+        <div class="pizarra">
+            
+            <div id="pantalla-juego">
+                <header class="informacion-superior">
+                    <span id="nivel-actual" class="texto-tiza">Nivel 1</span>
+                    <div class="progreso" id="progreso-estrellas">
+                        <span class="estrella">★</span>
+                        <span class="estrella">★</span>
+                        <span class="estrella">★</span>
+                        <span class="estrella">★</span>
+                        <span class="estrella">★</span>
+                    </div>
+                </header>
+                
+                <main class="contenido-juego">
+                    <p class="problema texto-tiza" id="problema-matematico">Cargando...</p>
+                    
+                    <div class="opciones">
+                        <button id="opcion-1" class="boton-opcion texto-tiza"></button>
+                        <button id="opcion-2" class="boton-opcion texto-tiza"></button>
+                        <button id="opcion-3" class="boton-opcion texto-tiza"></button>
+                    </div>
+                </main>
+
+                <footer class="informacion-inferior">
+                    <p class="texto-tiza" id="puntuacion">Puntuación: 0</p>
+                </footer>
+            </div>
+
+            <div id="pantalla-final" class="oculto">
+                <h1 class="texto-tiza">¡Juego Completado!</h1>
+                <h2 class="texto-tiza mensaje-final">¡Eres un **GENIO MATEMÁTICO**!</h2>
+                <p class="texto-tiza">Lograste superar los 10 niveles de dificultad.</p>
+                <p class="texto-tiza">Puntuación Final: <span id="puntuacion-final">0</span></p>
+                <button id="reiniciar-juego" class="boton-reiniciar texto-tiza">Volver a Jugar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="juego.js"></script>
+</body>
+</html>
